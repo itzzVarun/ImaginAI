@@ -115,7 +115,7 @@ app.use("/api/v1/stripe", stripeRouter);
 app.use(errorHandler);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../aiFrontend/dist")));
+  app.use(express.static(path.join(__dirname, "../aiFrontend/build")));
 
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../aiFrontend", "build", "index.html"));
