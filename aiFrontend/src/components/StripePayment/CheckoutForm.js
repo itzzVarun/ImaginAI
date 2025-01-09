@@ -52,7 +52,7 @@ const CheckoutForm = () => {
           clientSecret: mutation?.data?.clientSecret,
           confirmParams: {
             return_url:
-              import.meta.env.MODE === "development"
+              process.env.NODE_ENV === "development"
                 ? "http://localhost:3000/success"
                 : "/success",
           },
