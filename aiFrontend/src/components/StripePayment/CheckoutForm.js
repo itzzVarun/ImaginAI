@@ -25,7 +25,6 @@ const CheckoutForm = () => {
   const elements = useElements();
   const [errorMessage, setErrorMessage] = useState(null);
   console.log(amount);
-  
 
   //Handle submit
   const handleSubmit = async (e) => {
@@ -54,7 +53,7 @@ const CheckoutForm = () => {
             return_url:
               process.env.NODE_ENV === "development"
                 ? "http://localhost:3000/success"
-                : "/success",
+                : "https://imaginai-loyy.onrender.com/success",
           },
         });
         if (error) {
