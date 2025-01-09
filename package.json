@@ -1,0 +1,13 @@
+{
+  "name": "ai-image-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix aiBackend && npm install --prefix aiFrontend && npm run build --prefix aiFrontend",
+    "start": "npm run start --prefix aiBackend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
